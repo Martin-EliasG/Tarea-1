@@ -376,9 +376,9 @@
         "# Haga los cálculos aquí\n",
         "i=0\n",
         "Estrellas = []\n",
-        "while i<len(lista_masas)-1:\n",
-        "  Estrellas += [IMF(lista_masas[i],lista_masas[i+1])]\n",
-        "  i += 1\n",
+        "while i<len(lista_masas)-1:                          #Esta recusión pasa los elementos de la la lista de masas con su masa sucesora hasta la penultima\n",
+        "  Estrellas += [IMF(lista_masas[i],lista_masas[i+1])]#y las agrega a una lista, la cual al final sumará todos sus elementos para obtener la cantidad de\n",
+        "  i += 1                                             #estrellas formadas\n",
         "print(Estrellas)\n",
         "sum(Estrellas)\n"
       ],
@@ -387,9 +387,9 @@
         "colab": {
           "base_uri": "https://localhost:8080/"
         },
-        "outputId": "43ed8409-fc16-4393-f3d9-7e9f1a56b00f"
+        "outputId": "a967f1ac-64f9-4035-c845-0936c70a6c62"
       },
-      "execution_count": 12,
+      "execution_count": 126,
       "outputs": [
         {
           "output_type": "stream",
@@ -406,7 +406,7 @@
             ]
           },
           "metadata": {},
-          "execution_count": 12
+          "execution_count": 126
         }
       ]
     },
